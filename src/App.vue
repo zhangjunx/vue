@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <ul class="lia">
-      <li v-for="(item, index) in 4" :key="index"></li>
+      <li v-for="(item, index) in 4"
+          :key="index"></li>
     </ul>
     <router-view />
   </div>
@@ -13,10 +14,10 @@ export default {
 }
 </script>
 
-<style scoped>
+<style scoped lang="less">
 /* #app {
 } */
-*{
+* {
   margin: 0;
   padding: 0;
 }
@@ -27,11 +28,11 @@ export default {
   display: flex;
   flex: 1;
   justify-content: space-between;
-}
-.lia li {
-  list-style: none;
-  height: 100px;
-  background-color: blue;
-  width: 20%;
+  li {
+    list-style: none;
+    height: 100px;
+    background-color: blue;
+    width: 20%;
+  }
 }
 </style>
