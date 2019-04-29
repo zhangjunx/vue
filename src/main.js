@@ -5,12 +5,15 @@ import App from './App'
 import router from './router'
 import 'lib-flexible/flexible'
 
-Vue.config.productionTip = false
+import './assets/reset.css'
 
+Vue.config.productionTip = false
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   router,
-  components: { App },
+  components: {
+    App
+  },
   template: '<App/>'
 })
