@@ -1,16 +1,21 @@
 <template>
   <div id="app">
-    <router-view/>
+    <top></top>
+    <router-view />
   </div>
 </template>
 
 <script>
+import top from './components/comm/top.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    top
+  }
 }
 </script>
 
 <style scoped>
-/* #app {
-} */
+#app {
+}
 </style>
