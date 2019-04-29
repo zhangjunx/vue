@@ -1,16 +1,24 @@
 <template>
   <div id="app">
+    <top></top>
+    <scroll></scroll>
     <router-view />
   </div>
 </template>
 <script>
-import '@/gcss/reset.css'
+import top from './components/comm/top.vue'
+import scroll from './components/comm/scrollSeach.vue'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    top,
+    scroll
+  }
 }
 </script>
 
 <style scoped lang="less">
-/* #app {
-} */
+#app {
+  padding-top: 96px;
+}
 </style>
