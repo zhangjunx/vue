@@ -1,20 +1,14 @@
 <template>
   <div id="app">
-    <top></top>
-    <scroll></scroll>
+
     <router-view />
   </div>
 </template>
-
 <script>
-import top from './components/comm/top.vue'
-import scroll from './components/comm/scrollSeach.vue'
+import './assets/reset.css'
 export default {
-  name: 'App',
-  components: {
-    top,
-    scroll
-  }
+  name: 'App'
+
 }
 </script>
 

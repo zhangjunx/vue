@@ -29,9 +29,9 @@ export default {
   z-index: 19;
   top: 0;
   width: 100%;
-  height: 48px;
+  height: 88px;
   align-items: center;
-  margin: 14px 0;
+  // margin: 14px 0;
   background-color: #fff;
   justify-content: space-between;
   .logo {

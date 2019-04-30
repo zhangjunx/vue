@@ -44,11 +44,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     } : false,
     publicPath: config.dev.assetsPublicPath,
     proxy: {
-      '/': {
-        target: 'http://localhost:8080',
-        changeOrigin: true,
-        secure: false, // 接受 运行在 https 上的服务
-      }
+      // '/': {
+      //   target: 'http://localhost:3000',
+      //   changeOrigin: true,
+      //   secure: false, // 接受 运行在 https 上的服务
+      // }
     },
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
