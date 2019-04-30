@@ -18,5 +18,4 @@ export default new Router({
       component: homePage
     }]
   }]
-
 })
