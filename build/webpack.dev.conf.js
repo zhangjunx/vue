@@ -30,7 +30,11 @@ const devWebpackConfig = merge(baseWebpackConfig, {
       rewrites: [{
         from: /.*/,
         to: path.posix.join(config.dev.assetsPublicPath, 'index.html')
+<<<<<<< HEAD
       } ]
+=======
+      }, ],
+>>>>>>> 3a3d416e436b20c6c42c8a59e4a2704051f2923c
     },
     hot: true,
     contentBase: false, // since we use CopyWebpackPlugin.
@@ -38,14 +42,27 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
     open: config.dev.autoOpenBrowser,
+<<<<<<< HEAD
     overlay: config.dev.errorOverlay
       ? {
         warnings: false,
         errors: true
       }
       : false,
+=======
+    overlay: config.dev.errorOverlay ? {
+      warnings: false,
+      errors: true
+    } : false,
+>>>>>>> 3a3d416e436b20c6c42c8a59e4a2704051f2923c
     publicPath: config.dev.assetsPublicPath,
-    proxy: config.dev.proxyTable,
+    proxy: {
+      '/': {
+        target: 'http://localhost:8080',
+        changeOrigin: true,
+        secure: false, // 接受 运行在 https 上的服务
+      }
+    },
     quiet: true, // necessary for FriendlyErrorsPlugin
     watchOptions: {
       poll: config.dev.poll
@@ -89,9 +106,14 @@ module.exports = new Promise((resolve, reject) => {
         compilationSuccessInfo: {
           messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`]
         },
+<<<<<<< HEAD
         onErrors: config.dev.notifyOnErrors
           ? utils.createNotifierCallback()
           : undefined
+=======
+        onErrors: config.dev.notifyOnErrors ?
+          utils.createNotifierCallback() : undefined
+>>>>>>> 3a3d416e436b20c6c42c8a59e4a2704051f2923c
       }))
 
       resolve(devWebpackConfig)
