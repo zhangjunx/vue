@@ -1,38 +1,23 @@
 <template>
   <div id="app">
-    <ul class="lia">
-      <li v-for="(item, index) in 4"
-          :key="index"></li>
-    </ul>
+    <animation></animation>
     <router-view />
   </div>
 </template>
 
 <script>
+import animation from './animation/animation'
+import './gcss/reset.css'
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    animation
+  }
+
 }
 </script>
 
 <style scoped lang="less">
-/* #app {
-} */
-* {
-  margin: 0;
-  padding: 0;
-}
-.lia {
-  width: 100%;
-  height: 100px;
-  background-color: red;
-  display: flex;
-  flex: 1;
-  justify-content: space-between;
-  li {
-    list-style: none;
-    height: 100px;
-    background-color: blue;
-    width: 20%;
-  }
+#app {
 }
 </style>
