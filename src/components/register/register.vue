@@ -47,7 +47,11 @@
              placeholder="6~16个字符，区分大小写">
     </div>
     <div class="btn-box">
-      <a href="#">登录</a>
+      <router-link tag="a"
+                   to="/ent">
+        登录
+      </router-link>
+
       <div class="zc">同意并注册</div>
     </div>
     <div class="desc">

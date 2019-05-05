@@ -5,14 +5,15 @@
     <a class="seach">
       <img src="./img/seach.png"
            alt="">
-      <span>超人回来了</span>
-    </a>
-    <router-link tag="a"
-                 to="/register">
-      <img class="gif"
-           src="//static.hdslb.com/images/member/noface.gif" />
-    </router-link>
 
+      <router-link to="/search"
+                   tag="span">超人回来了</router-link>
+    </a>
+
+    <router-link to="/space"
+                 tag="a"
+                 class="myspace"><img class="gif"
+           src="//static.hdslb.com/images/member/noface.gif" /></router-link>
     <div class="down">
       <p>下载APP</p>
     </div>

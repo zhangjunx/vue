@@ -8,12 +8,15 @@
 
 import './assets/reset.css'
 export default {
-  name: 'App'
+  name: 'App',
+  component: {
 
+  }
 }
 </script>
 
 <style scoped lang="less">
 #app {
 }
+
 </style>
