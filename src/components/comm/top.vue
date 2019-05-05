@@ -5,11 +5,17 @@
     <a class="seach">
       <img src="./img/seach.png"
            alt="">
-      <span>超人回来了</span>
+      <!-- <span>超人回来了</span> -->
+      <router-link to="/search"
+                   tag="span">超人回来了</router-link>
     </a>
-    <a href=""
+    <!-- <a href=""
        class="myspace"><img class="gif"
-           src="//static.hdslb.com/images/member/noface.gif" /></a>
+           src="//static.hdslb.com/images/member/noface.gif" /></a> -->
+    <router-link to="/space"
+                 tag="a"
+                 class="myspace"><img class="gif"
+           src="//static.hdslb.com/images/member/noface.gif" /></router-link>
     <div class="down">
       <p>下载APP</p>
     </div>

@@ -4,10 +4,10 @@
     <div class="tuijian">
       <p>{{list[0].title}}</p>
       <a href="javascript:">
-        <img src="../../static/排行.png"
+        <img src="./img/排行.png"
              alt="">
         <p>排行榜</p>
-        <img src="../../static/paihang2.png"
+        <img src="./img/paihang2.png"
              alt="">
       </a>
       <ul>
@@ -26,7 +26,7 @@
       <a href="javascript:">
 
         <p>查看更多</p>
-        <img src="../../static/paihang2.png"
+        <img src="./img/paihang2.png"
              alt="">
       </a>
       <ul>
@@ -46,25 +46,25 @@ export default {
       list: [
         {
           title: '热门推荐',
-          img: 'http://i2.hdslb.com/bfs/archive/e998d555c4e5f6c703420c9b014932a8377eb5bb.jpg',
+          img: 'http://img0.imgtn.bdimg.com/it/u=2460254879,3877010045&fm=26&gp=0.jpg',
           ps:
             '前方高能！让世界感受这场视觉盛宴吧！'
         },
         {
 
-          img: 'http://i0.hdslb.com/bfs/archive/11c89c8137221e3feadab54d6339ad7ad4159a45.jpg',
+          img: 'http://img0.imgtn.bdimg.com/it/u=2930808577,1046100971&fm=26&gp=0.jpg',
           ps:
             '《火影忍者博人传》沙动画极限2000幅，沙子绘制的动画效果炸裂堪比原作！'
         },
         {
 
-          img: 'http://i1.hdslb.com/bfs/archive/677602a3919e75a64abdb8b2763636eaa3f0b9af.jpg',
+          img: 'http://img4.imgtn.bdimg.com/it/u=201064018,531334770&fm=26&gp=0.jpg',
           ps:
             'B站宝贝'
         },
         {
 
-          img: 'http://i0.hdslb.com/bfs/archive/864439db4cf5d6504de091a3085f36a1dd0d4b43.jpg',
+          img: 'http://img0.imgtn.bdimg.com/it/u=333541079,132340177&fm=26&gp=0.jpg',
           ps:
             '【3D东方】Brambly Boundaries'
         }
@@ -72,25 +72,25 @@ export default {
       plist: [
 
         {
-          title: 'MAD·AMV',
+          title: '连载动画',
           img: 'http://i2.hdslb.com/bfs/archive/e998d555c4e5f6c703420c9b014932a8377eb5bb.jpg',
           ps:
             '前方高能！让世界感受这场视觉盛宴吧！'
         },
         {
-          title: 'MMD·3D',
+          title: '完结动画',
           img: 'http://i0.hdslb.com/bfs/archive/11c89c8137221e3feadab54d6339ad7ad4159a45.jpg',
           ps:
             '《火影忍者博人传》沙动画极限2000幅，沙子绘制的动画效果炸裂堪比原作！'
         },
         {
-          title: '短片·手书·配音',
+          title: '咨询',
           img: 'http://i1.hdslb.com/bfs/archive/677602a3919e75a64abdb8b2763636eaa3f0b9af.jpg',
           ps:
             'B站宝贝'
         },
         {
-          title: '综合',
+          title: '官方延伸',
           img: 'http://i0.hdslb.com/bfs/archive/864439db4cf5d6504de091a3085f36a1dd0d4b43.jpg',
           ps:
             '【3D东方】Brambly Boundaries'
@@ -100,7 +100,7 @@ export default {
     }
   },
   mounted () {
-    console.log(this.list[0].img)
+    // console.log(this.list[0].img)
   }
 }
 </script>
@@ -109,6 +109,8 @@ export default {
 .tui {
   background: #f9f9f9;
   width: 100%;
+  padding-top: 98px;
+
   border-top: 2px solid #ccc;
 }
 .tuijian {
@@ -124,6 +126,7 @@ export default {
   height: 100px;
   line-height: 100px;
 }
+
 .tui .tuijian ul {
   width: 100%;
   display: flex;
@@ -143,6 +146,8 @@ export default {
 }
 .tui .tuijian ul li img {
   width: 100%;
+  height: 220px;
+
   border-radius: 15px;
 }
 .tui .tuijian a {
