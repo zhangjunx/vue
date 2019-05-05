@@ -56,5 +56,46 @@
 
        "http://i0.hdslb.com/bfs/archive/fdb017e9508e1208e38a8604a89ca70c3720107e.jpg"
      ]
+   ],
+   "billboard": [{
+       "title": "【经典老番】监狱风云1",
+       "img": "../static/rank1.png",
+       "imgs":"../static/ff82f95f19c05cd2debfb701578da87995a763b1.jpg"
+
+     },
+     {
+       "title": "这动画也太骚了吧！2019四月新番吐槽大盘点！（第三",
+       "img": "../static/rank2.png",
+       "imgs":"../static/9018ea119dc49ad0499608445c73803ebbe0e425.jpg"
+     },
+     {
+       "title": "男子参加选秀模仿蔡徐鲲打篮球，惊呆了观众评委...",
+       "img": "../static/rank3.png",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     },
+     {
+       "title": "【老番茄】史上最骚杀手(第五集)",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     },
+     {
+       "title": "我连一秒都没有拥有过她，却感觉失去过她千万次。",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     },
+     {
+       "title": "漫威十年，I AM IRONMAN",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     },
+     {
+       "title": "【中国网游史】琳琅天上成功的秘诀及其被天美“吞并",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     },
+     {
+       "title": "来自沙雕室友的神奇电话 我笑哭了",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     },
+     {
+       "title": "腾讯天美手游《见》口碑爆炸 玩家：感动哭了",
+       "imgs":"../static/7568265b570ae38804a9a491fa439edd23ce1c67.jpg"
+     }
    ]
  }

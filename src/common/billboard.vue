@@ -2,21 +2,41 @@
   <div class="billboard">
     <div class="title">
       <h2>
-        <a href=""><img src="//s1.hdslb.com/bfs/static/mult/images/back.png" alt=""></a>
+        <router-link tag="a"
+                     to="/home/animation/tuijian">
+          <img src="//s1.hdslb.com/bfs/static/mult/images/back.png"
+               alt="">
+        </router-link>
+
         排行榜
       </h2>
     </div>
     <div class="nav">
       <ul>
-        <li v-for="(item, index) in 8" :key="index">全站</li>
+
+        <router-link tag="li"
+                     to="/billboard/quanzhan">全站</router-link>
+        <router-link tag="li"
+                     to="/billboard/donghua">动画</router-link>
+        <router-link tag="li"
+                     to="/billboard">番剧</router-link>
+        <router-link tag="li"
+                     to="/billboard">国创</router-link>
+        <router-link tag="li"
+                     to="/billboard">音乐</router-link>
+        <router-link tag="li"
+                     to="/billboard">舞蹈</router-link>
+        <router-link tag="li"
+                     to="/billboard">科技</router-link>
+        <router-link tag="li"
+                     to="/billboard">数码</router-link>
+        <router-link tag="li"
+                     to="/billboard">游戏</router-link>
       </ul>
     </div>
-    <div class="content">
-      <ul>
-        <li>
-        </li>
-      </ul>
-    </div>
+    <router-view>
+    </router-view>
+
   </div>
 </template>
 <script>
@@ -25,12 +45,9 @@ export default {
 }
 </script>
 <style scoped lang="less">
-*{
-  margin: 0;
-  padding: 0;
-}
 .title {
   height: 90px;
+
   h2 {
     position: relative;
     font-size: 32px;
@@ -41,7 +58,7 @@ export default {
     > a {
       float: left;
       margin: 30px 0px 8px 20px;
-      img{
+      img {
         display: block;
         height: 32px;
         width: 18px;
@@ -49,28 +66,28 @@ export default {
     }
   }
 }
-.nav{
+.nav {
   overflow-x: auto;
-  ul{
+
+  ul {
     margin-left: 20px;
     font-size: 30px;
-    width: 1110px;
-    li{
+    width: 1250px;
+    li {
       width: 60px;
       line-height: 70px;
       margin-right: 70px;
       height: 70px;
       display: inline-block;
       border-bottom: 2px solid transparent;
-      &:active{
-        color: #fb7299;
-        border-bottom: 2px solid #fb7299
-      };
-      &:first-of-type{
-        color: #fb7299;
-        border-bottom: 2px solid #fb7299
-      }
     }
   }
+}
+::-webkit-scrollbar {
+  display: none;
+}
+li.router-link-exact-active {
+  color: #fb7299;
+  border-bottom: 2px solid #fb7299 !important;
 }
 </style>

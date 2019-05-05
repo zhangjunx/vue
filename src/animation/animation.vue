@@ -4,28 +4,33 @@
       <ul>
 
         <router-link tag="li"
-                     to="/tuijian">推荐</router-link>
+                     to="/home/animation/tuijian">推荐</router-link>
         <router-link tag="li"
-                     to="/MAD">MAD·AMV</router-link>
+                     to="/animation/MAD">MAD·AMV</router-link>
         <router-link tag="li"
-                     to="/MMD">MMD·3D</router-link>
+                     to="/animation/MMD">MMD·3D</router-link>
         <router-link tag="li"
-                     to="/duanpian">短片·手书·配音</router-link>
+                     to="/animation/duanpian">短片·手书·配音</router-link>
         <router-link tag="li"
-                     to="/zonghe">综合</router-link>
+                     to="/animation/zonghe">综合</router-link>
 
       </ul>
     </div>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+
 export default {
 
 }
 </script>
 
 <style scoped lang="less">
+.animation{
+  padding-top: 88px;
+}
 .nav {
   overflow-x: auto;
 
@@ -41,13 +46,13 @@ export default {
       display: inline-block;
       font-size: 28px;
       color: #757575;
-      // &:active {
-      //   color: #fb7299;
-      // }
     }
     li.router-link-exact-active {
-      color: #fb7299
+      color: #fb7299;
     }
   }
+}
+::-webkit-scrollbar{
+  display: none;
 }
 </style>

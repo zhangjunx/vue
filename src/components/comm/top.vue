@@ -7,9 +7,12 @@
            alt="">
       <span>超人回来了</span>
     </a>
-    <a href=""
-       class="myspace"><img class="gif"
-           src="//static.hdslb.com/images/member/noface.gif" /></a>
+    <router-link tag="a"
+                 to="/register">
+      <img class="gif"
+           src="//static.hdslb.com/images/member/noface.gif" />
+    </router-link>
+
     <div class="down">
       <p>下载APP</p>
     </div>

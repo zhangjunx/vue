@@ -5,6 +5,7 @@
   </div>
 </template>
 <script>
+
 import './assets/reset.css'
 export default {
   name: 'App'
@@ -14,6 +15,5 @@ export default {
 
 <style scoped lang="less">
 #app {
-  padding-top: 96px;
 }
 </style>
