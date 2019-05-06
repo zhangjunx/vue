@@ -37,6 +37,7 @@ import chinaanimation from '@/components/china/chinaanimation.vue'
 import yuanchuang from '@/components/china/yuanchuang.vue'
 import budai from '@/components/china/budai.vue'
 import zixun from '@/components/china/zixun.vue'
+import ironman from '../common/Ironman'
 Vue.use(Router)
 
 export default new Router({
@@ -44,6 +45,9 @@ export default new Router({
     path: '/',
     component: home,
     redirect: '/home/homePage'
+  }, {
+    path: '/ironman',
+    component: ironman
   }, {
     path: '/play',
     component: play
@@ -70,23 +74,18 @@ export default new Router({
       path: 'mine',
       component: mine
     }]
-  },
-
-  {
+  }, {
     path: '/billboard',
     component: billboard,
     redirect: '/billboard/quanzhan',
     children: [{
       path: 'quanzhan',
       component: quanzhan
-    },
-    {
+    }, {
       path: 'donghua',
       component: donghua
-    }
-    ]
-  },
-  {
+    }]
+  }, {
     path: '/register',
     component: register,
     meta: {
@@ -132,8 +131,7 @@ export default new Router({
         path: 'end',
         component: end
       }]
-    },
-    {
+    }, {
       path: 'animation',
       component: animation,
       redirect: '/home/animation/tuijian',
@@ -181,8 +179,7 @@ export default new Router({
         path: 'dymusic',
         component: dymusic
       }]
-    },
-    {
+    }, {
       path: 'chinanav',
       component: chinanav,
       redirect: '/home/chinanav/chinatuijian',
@@ -193,19 +190,16 @@ export default new Router({
           title: '国创'
         }
       },
-      {
+       {
         path: 'chinaanimation',
         component: chinaanimation
-      },
-      {
+      }, {
         path: 'yuanchuang',
         component: yuanchuang
-      },
-      {
+      }, {
         path: 'budai',
         component: budai
-      },
-      {
+      }, {
         path: 'zixun',
         component: zixun
       }
@@ -213,7 +207,5 @@ export default new Router({
     }
     ]
   }
-
   ]
-
 })
