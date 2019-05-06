@@ -14,6 +14,14 @@ require('video.js/dist/video-js.css')
 require('vue-video-player/src/custom-theme.css')
 Vue.use(VideoPlayer)
 
+// 路由守卫函数
+// 路由全局前置函数
+router.beforeEach((to, from, next) => {
+  console.log(to.meta)
+  document.title = to.meta.title
+  next()
+})
+
 Vue.prototype.$http = axios
 
 Vue.use(MintUI)

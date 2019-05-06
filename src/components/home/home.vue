@@ -1,13 +1,9 @@
 <template>
   <div class="home">
-    <!-- <entry></entry> -->
     <top></top>
     <scroll></scroll>
-    <!-- <homePage></homePage> -->
     <router-view></router-view>
-    <!-- <router-view></router-view> -->
     <foot></foot>
-
   </div>
 </template>
 
@@ -20,7 +16,7 @@ import foot from '@/components/comm/footer.vue'
 
 export default {
   components: {
-    // entry,
+
     top,
     scroll,
     foot

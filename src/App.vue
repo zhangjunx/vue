@@ -1,7 +1,15 @@
 <template>
   <div id="app">
+    <keep-alive>
+      <transition name=fade>
+        <router-view v-if="this.$route.meta.cache" />
+      </transition>
 
-    <router-view />
+    </keep-alive>
+    <transition name=fade>
+      <router-view v-if="!this.$route.meta.cache" />
+    </transition>
+
   </div>
 </template>
 <script>
@@ -18,5 +26,11 @@ export default {
 <style scoped lang="less">
 #app {
 }
-
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+  opacity: 0;
+}
 </style>

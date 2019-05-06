@@ -52,14 +52,20 @@ export default new Router({
     component: search
   }, {
     path: '/ent',
-    component: ent
+    component: ent,
+    meta: {
+      title: '登录'
+    }
   }, {
     path: '/space',
     component: space,
     redirect: '/space/history',
     children: [{
       path: 'history',
-      component: history
+      component: history,
+      meta: {
+        title: '我的'
+      }
     }, {
       path: 'mine',
       component: mine
@@ -82,24 +88,37 @@ export default new Router({
   },
   {
     path: '/register',
-    component: register
+    component: register,
+    meta: {
+      title: '注册'
+    }
+
   },
   {
     path: '/home',
     component: home,
     redirect: '/home/homePage',
+
     children: [{
       path: 'homePage',
-      component: homePage
+      component: homePage,
+      meta: {
+        cache: true,
+        title: '首页'
+      }
     },
 
     {
       path: 'fanju',
       component: fanju,
+
       redirect: '/home/fanju/ftuijian',
       children: [{
         path: 'ftuijian',
-        component: ftuijian
+        component: ftuijian,
+        meta: {
+          title: '番剧'
+        }
       }, {
         path: 'Serial',
         component: Serial
@@ -118,9 +137,14 @@ export default new Router({
       path: 'animation',
       component: animation,
       redirect: '/home/animation/tuijian',
+
       children: [{
         path: 'tuijian',
-        component: tuijian
+        component: tuijian,
+        meta: {
+          cache: false,
+          title: '动画'
+        }
       }, {
         path: 'MAD',
         component: MAD
@@ -140,7 +164,10 @@ export default new Router({
       redirect: '/home/dmusic/tmusic',
       children: [{
         path: 'tmusic',
-        component: tmusic
+        component: tmusic,
+        meta: {
+          title: '音乐'
+        }
       }, {
         path: 'ycmusic',
         component: ycmusic
@@ -161,7 +188,10 @@ export default new Router({
       redirect: '/home/chinanav/chinatuijian',
       children: [{
         path: 'chinatuijian',
-        component: chinatuijian
+        component: chinatuijian,
+        meta: {
+          title: '国创'
+        }
       },
       {
         path: 'chinaanimation',
