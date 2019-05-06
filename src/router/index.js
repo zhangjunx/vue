@@ -2,11 +2,8 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import home from '@/components/home/home.vue'
 import homePage from '@/components/home/components/home_page/home_page.vue'
-
 import billboard from '@/common/billboard'
-
 import quanzhan from '@/components/billboard/quanzhan.vue'
-
 import donghua from '@/components/billboard/donghua.vue'
 import register from '@/components/register/register.vue'
 import animation from '@/components/home/components/animation/animation.vue'
@@ -27,6 +24,13 @@ import mine from '@/components/space/spa/mine.vue'
 import ent from '../components/comm/ent.vue'
 import search from '../components/comm/search'
 import play from '../components/home/components/player/play.vue'
+import dmusic from '../components/home/components/music/dmusic.vue'
+import tmusic from '../components/home/components/music/tmusic.vue'
+import ycmusic from '../components/home/components/music/ycmusic.vue'
+import fcmusic from '../components/home/components/music/fcmusic.vue'
+import vomusic from '../components/home/components/music/vomusic.vue'
+import dymusic from '../components/home/components/music/dymusic.vue'
+
 Vue.use(Router)
 
 export default new Router({
@@ -82,6 +86,7 @@ export default new Router({
       path: 'homePage',
       component: homePage
     },
+
     {
       path: 'fanju',
       component: fanju,
@@ -122,6 +127,26 @@ export default new Router({
       }, {
         path: 'duanpian',
         component: duanpian
+      }]
+    }, {
+      path: 'dmusic',
+      component: dmusic,
+      redirect: '/home/dmusic/tmusic',
+      children: [{
+        path: 'tmusic',
+        component: tmusic
+      }, {
+        path: 'ycmusic',
+        component: ycmusic
+      }, {
+        path: 'fcmusic',
+        component: fcmusic
+      }, {
+        path: 'vomusic',
+        component: vomusic
+      }, {
+        path: 'dymusic',
+        component: dymusic
       }]
     }
     ]

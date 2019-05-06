@@ -34,10 +34,9 @@
             国创
           </router-link>
 
-          <router-link to="/"
+          <router-link to="/home/dmusic"
                        tag="li"
-                       class="music"
-                       exact>
+                       class="music">
 
             音乐
           </router-link>
@@ -166,7 +165,7 @@ export default {
 <style scoped lang="less">
 .router-link-active {
   color: #fb7299;
-  border-bottom: 4px solid #fb7299;
+  border-bottom: 4px solid #fb7299 !important;
 }
 
 .scrollSeach {

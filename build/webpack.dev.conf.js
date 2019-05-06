@@ -38,16 +38,16 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     host: HOST || config.dev.host,
     port: PORT || config.dev.port,
     open: config.dev.autoOpenBrowser,
-    overlay: config.dev.errorOverlay
-      ? {
+    overlay: config.dev.errorOverlay ?
+      {
         warnings: false,
         errors: true
-      }
-      : false,
+      } :
+      false,
     publicPath: config.dev.assetsPublicPath,
     proxy: {
       '/': {
-        target: 'http://127.0.0.1:3000',
+        // target: 'http://127.0.0.1:3000',
         changeOrigin: true,
         secure: false
       }
@@ -95,9 +95,9 @@ module.exports = new Promise((resolve, reject) => {
         compilationSuccessInfo: {
           messages: [`Your application is running here: http://${devWebpackConfig.devServer.host}:${port}`]
         },
-        onErrors: config.dev.notifyOnErrors
-          ? utils.createNotifierCallback()
-          : undefined
+        onErrors: config.dev.notifyOnErrors ?
+          utils.createNotifierCallback() :
+          undefined
       }))
 
       resolve(devWebpackConfig)
