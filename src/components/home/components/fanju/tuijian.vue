@@ -3,13 +3,16 @@
 
     <div class="tuijian">
       <p>{{list[0].title}}</p>
-      <a href="javascript:">
+     <router-link tag="a"
+                   to="/billboard">
+
         <img src="./img/排行.png"
              alt="">
         <p>排行榜</p>
         <img src="./img/paihang2.png"
              alt="">
-      </a>
+
+      </router-link>
       <ul>
         <li v-for="(item,index) in list"
             :key="index"><img :src="item.img"

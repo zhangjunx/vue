@@ -46,12 +46,12 @@ export default new Router({
   }, {
     path: '/space',
     component: space,
-    redirect: '/history',
+    redirect: '/space/history',
     children: [{
-      path: '/history',
+      path: 'history',
       component: history
     }, {
-      path: '/mine',
+      path: 'mine',
       component: mine
     }]
   },
@@ -79,7 +79,7 @@ export default new Router({
     component: home,
     redirect: '/home/homePage',
     children: [{
-      path: '/home/homePage',
+      path: 'homePage',
       component: homePage
     },
     {
@@ -87,19 +87,19 @@ export default new Router({
       component: fanju,
       redirect: '/home/fanju/ftuijian',
       children: [{
-        path: '/home/fanju/ftuijian',
+        path: 'ftuijian',
         component: ftuijian
       }, {
-        path: '/home/fanju/Serial',
+        path: 'Serial',
         component: Serial
       }, {
-        path: '/home/fanju/official',
+        path: 'official',
         component: official
       }, {
-        path: '/home/fanju/consulting',
+        path: 'consulting',
         component: consulting
       }, {
-        path: '/home/fanju/end',
+        path: 'end',
         component: end
       }]
     },
