@@ -37,6 +37,7 @@ import chinaanimation from '@/components/china/chinaanimation.vue'
 import yuanchuang from '@/components/china/yuanchuang.vue'
 import budai from '@/components/china/budai.vue'
 import zixun from '@/components/china/zixun.vue'
+import ironman from '../common/Ironman'
 Vue.use(Router)
 
 export default new Router({
@@ -44,6 +45,9 @@ export default new Router({
     path: '/',
     component: home,
     redirect: '/home/homePage'
+  }, {
+    path: '/ironman',
+    component: ironman
   }, {
     path: '/play',
     component: play
@@ -64,36 +68,28 @@ export default new Router({
       path: 'mine',
       component: mine
     }]
-  },
-
-  {
+  }, {
     path: '/billboard',
     component: billboard,
     redirect: '/billboard/quanzhan',
     children: [{
       path: 'quanzhan',
       component: quanzhan
-    },
-    {
+    }, {
       path: 'donghua',
       component: donghua
-    }
-    ]
-  },
-  {
+    }]
+  }, {
     path: '/register',
     component: register
-  },
-  {
+  }, {
     path: '/home',
     component: home,
     redirect: '/home/homePage',
     children: [{
       path: 'homePage',
       component: homePage
-    },
-
-    {
+    }, {
       path: 'fanju',
       component: fanju,
       redirect: '/home/fanju/ftuijian',
@@ -113,8 +109,7 @@ export default new Router({
         path: 'end',
         component: end
       }]
-    },
-    {
+    }, {
       path: 'animation',
       component: animation,
       redirect: '/home/animation/tuijian',
@@ -154,36 +149,26 @@ export default new Router({
         path: 'dymusic',
         component: dymusic
       }]
-    },
-    {
+    }, {
       path: 'chinanav',
       component: chinanav,
       redirect: '/home/chinanav/chinatuijian',
       children: [{
         path: 'chinatuijian',
         component: chinatuijian
-      },
-      {
+      }, {
         path: 'chinaanimation',
         component: chinaanimation
-      },
-      {
+      }, {
         path: 'yuanchuang',
         component: yuanchuang
-      },
-      {
+      }, {
         path: 'budai',
         component: budai
-      },
-      {
+      }, {
         path: 'zixun',
         component: zixun
-      }
-      ]
-    }
-    ]
-  }
-
-  ]
-
+      }]
+    }]
+  }]
 })

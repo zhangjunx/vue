@@ -2,12 +2,12 @@
   <div class="tab">
     <ul>
       <router-link tag="li"
-                   to="/history">
+                   to="/space/history">
         <p>历史记录</p>
       </router-link>
 
       <router-link tag="li"
-                   to="/mine">
+                   to="/space/mine">
         <p>我的投稿</p>
       </router-link>
     </ul>

@@ -3,7 +3,11 @@
     <Swiper class="swiper">
       <Slide v-for="(item,index) in loopList"
              :key="index">
-        <img :src="item" />
+        <router-link tag="li"
+                     to="/Ironman">
+          <img :src="item" />
+
+        </router-link>
       </Slide>
     </Swiper>
 
@@ -32,6 +36,9 @@ export default {
 }
 </script>
 <style lang="less" scoped>
+li {
+  list-style: none;
+}
 .loop {
   height: 220px;
   margin: auto;
