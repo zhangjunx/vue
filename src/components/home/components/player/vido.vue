@@ -1,8 +1,15 @@
 <template>
-  <video-player class="video-player vjs-custom-skin"
-                ref="videoPlayer"
-                :playsinline="true"
-                :options="playerOptions"></video-player>
+  <div class="play">
+
+    <video-player class="video-player vjs-custom-skin"
+                  ref="videoPlayer"
+                  :playsinline="true"
+                  :options="playerOptions"></video-player>
+    <div class="title">
+      <img src="./vido/App.png"
+           alt="">
+    </div>
+  </div>
 
 </template>
 <script>
@@ -47,5 +54,14 @@ export default {
   width: 100%;
   height: 100%;
   display: block;
+}
+.video-player {
+  padding-top: 88px;
+}
+.title {
+  img {
+    margin: 0 auto;
+    display: block;
+  }
 }
 </style>

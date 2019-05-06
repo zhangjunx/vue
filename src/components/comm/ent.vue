@@ -11,7 +11,7 @@
                placeholder="请输入密码" />
       </li>
     </ul>
-    <span>忘记密码？</span>
+    <span class="mima">忘记密码？</span>
     <div style="clear:both"></div>
     <div class="btn">
       <router-link tag="button"
@@ -75,10 +75,10 @@ export default {
   }
   span {
     float: right;
-    color: red;
+    color: #fb7299;
   }
   .btn {
-    margin-top: 20px;
+    margin-top: 32px;
     width: 100%;
     height: 86px;
     display: flex;
@@ -87,6 +87,7 @@ export default {
     button {
       width: 338px;
       outline: none;
+
       border-radius: 10px;
       font-size: 32px;
       background: #fff;
