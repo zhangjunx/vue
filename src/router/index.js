@@ -31,6 +31,12 @@ import fcmusic from '../components/home/components/music/fcmusic.vue'
 import vomusic from '../components/home/components/music/vomusic.vue'
 import dymusic from '../components/home/components/music/dymusic.vue'
 
+import chinanav from '@/components/china/chinanav.vue'
+import chinatuijian from '@/components/china/chinatuijian.vue'
+import chinaanimation from '@/components/china/chinaanimation.vue'
+import yuanchuang from '@/components/china/yuanchuang.vue'
+import budai from '@/components/china/budai.vue'
+import zixun from '@/components/china/zixun.vue'
 Vue.use(Router)
 
 export default new Router({
@@ -148,6 +154,32 @@ export default new Router({
         path: 'dymusic',
         component: dymusic
       }]
+    },
+    {
+      path: 'chinanav',
+      component: chinanav,
+      redirect: '/home/chinanav/chinatuijian',
+      children: [{
+        path: 'chinatuijian',
+        component: chinatuijian
+      },
+      {
+        path: 'chinaanimation',
+        component: chinaanimation
+      },
+      {
+        path: 'yuanchuang',
+        component: yuanchuang
+      },
+      {
+        path: 'budai',
+        component: budai
+      },
+      {
+        path: 'zixun',
+        component: zixun
+      }
+      ]
     }
     ]
   }
