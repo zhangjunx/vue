@@ -26,10 +26,9 @@
             番剧
           </router-link>
 
-          <router-link to="/"
+          <router-link to="/home/chinanav"
                        tag="li"
-                       class="guo"
-                       exact>
+                       class="guo" >
 
             国创
           </router-link>

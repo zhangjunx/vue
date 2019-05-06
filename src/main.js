@@ -9,6 +9,7 @@ import MintUI from 'mint-ui'
 import 'mint-ui/lib/style.css'
 
 import VideoPlayer from 'vue-video-player'
+// import 'babel-polyfill'
 require('video.js/dist/video-js.css')
 require('vue-video-player/src/custom-theme.css')
 Vue.use(VideoPlayer)

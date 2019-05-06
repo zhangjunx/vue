@@ -19,4 +19,7 @@ module.exports = {
     img: 'src',
     image: 'xlink:href'
   }
+  // entry: {
+  //   app: ['babel-polyfill', '../src/main.js']
+  // }
 }

@@ -47,7 +47,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     publicPath: config.dev.assetsPublicPath,
     proxy: {
       '/': {
-        target: 'http://127.0.0.1:3000',
+        // target: 'http://127.0.0.1:3000',
         changeOrigin: true,
         secure: false
       }
