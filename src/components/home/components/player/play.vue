@@ -5,6 +5,7 @@
     <conent></conent>
     <pinglun></pinglun>
     <itemWrap></itemWrap>
+    <pl></pl>
   </div>
 </template>
 <script>
@@ -13,13 +14,15 @@ import vido from './vido'
 import conent from './content'
 import pinglun from './pinglun'
 import itemWrap from './itemWrap'
+import pl from './pl'
 export default {
   components: {
     top,
     vido,
     conent,
     pinglun,
-    itemWrap
+    itemWrap,
+    pl
   }
 }
 </script>

@@ -12,7 +12,7 @@
       </a>
       <ul>
         <li v-for="(item,index) in list"
-            :key="index"><img :src="item.img"
+            :key="index"><img v-lazy="item.img"
                alt="">
           <p>{{item.ps}}</p>
         </li>

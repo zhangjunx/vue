@@ -190,7 +190,7 @@ export default new Router({
           title: '国创'
         }
       },
-       {
+      {
         path: 'chinaanimation',
         component: chinaanimation
       }, {

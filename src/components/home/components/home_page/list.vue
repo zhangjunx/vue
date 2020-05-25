@@ -6,7 +6,7 @@
                    to="/play"
                    tag="li">
         <div class="img_box">
-          <img :src="item.img"
+          <img v-lazy="item.img"
                alt="">
           <span><i><img src="../../img/start.png" /></i>20.1万</span>
         </div>

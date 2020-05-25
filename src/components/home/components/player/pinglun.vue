@@ -3,7 +3,7 @@
     <p class="shou">收藏</p>
     <p class="huan">缓存</p>
     <p class="fen">分享</p>
-    <span>13096评论</span>
+    <a href="#pinglun">13096评论</a>
   </div>
 </template>
 <script>
@@ -34,10 +34,10 @@ export default {
     background: url("./vido/分享.png") no-repeat left center;
     background-size: 36px 36px;
   }
-  span {
+  a {
     margin-left: 146px;
     background: url("./vido/评论.png") no-repeat left center;
-    background-size: 36px 36px;
+    background-size: 30px 30px;
     padding-left: 36px;
     color: #999;
   }
